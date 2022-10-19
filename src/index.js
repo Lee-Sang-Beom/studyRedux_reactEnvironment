@@ -8,8 +8,8 @@ import { createStore } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
 function reducer(state, action) {
-
 }
+
 const store = createStore(reducer, composeWithDevTools());
 const root = ReactDOM.createRoot(document.getElementById('root'));
 console.log(store);
