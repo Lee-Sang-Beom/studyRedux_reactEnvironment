@@ -1,24 +1,23 @@
-import logo from './logo.svg';
+import React from 'react';
+import { Reset } from 'styled-reset';
 import './App.css';
+import Content from './Component/Content';
+import Header from './Component/Header';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <Reset/>
+      <Header/>
+      <Content />
+      <style jsx>{`
+        @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+        h1, h2, h3, h4, h5, h6, 
+        p, div, span, strong{
+          font-family: 'Jua';
+        }
+      `}</style>
+    </React.Fragment>
   );
 }
 
