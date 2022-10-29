@@ -7,7 +7,7 @@ function Content() {
     return (
       <header>
         <h1>Web</h1>
-        <p>Hello web!</p>
+        <p>Hello redux in react!</p>
       </header>
     );
   };
@@ -35,12 +35,10 @@ function Content() {
     return (
       <ul>
         <li>
-          <a href="/" onClick={onClickEvent}>
-            create
-          </a>
+          <button onClick={onClickEvent}>CREATE</button>
         </li>
         <li>
-          <input type="button" value="delete" />
+          <button onClick={onClickEvent}>DELETE</button>
         </li>
       </ul>
     );
